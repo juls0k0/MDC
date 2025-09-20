@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <!-- CSS Styling (using Tailwind and custom styles) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f4f6;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+<!-- Header and Navigation -->
+<header class="bg-gray-800 shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center">
+    <h1 class="text-2xl font-bold mb-2 sm:mb-0" style="color:#9792CB;">My Profile</h1>
+    <ul id="nav-links" class="flex flex-wrap justify-center sm:justify-start space-x-2 sm:space-x-4">
+      <li>
+        <a href="#home" class="nav-link font-medium px-3 py-2 rounded-md transition-colors duration-200" style="color:#9792CB;">Home</a>
+      </li>
+      <li>
+        <a href="#hobbies" class="nav-link font-medium px-3 py-2 rounded-md transition-colors duration-200" style="color:#9792CB;">Hobbies</a>
+      </li>
+      <li>
+        <a href="#qualification" class="nav-link font-medium px-3 py-2 rounded-md transition-colors duration-200" style="color:#9792CB;">Qualification</a>
+      </li>
+      <li>
+        <a href="#family" class="nav-link font-medium px-3 py-2 rounded-md transition-colors duration-200" style="color:#9792CB;">Family</a>
+      </li>
+      <li>
+        <a href="#extracurricular" class="nav-link font-medium px-3 py-2 rounded-md transition-colors duration-200" style="color:#9792CB;">Extracurricular</a>
+      </li>
+      <li>
+        <a href="#contact" class="nav-link font-medium px-3 py-2 rounded-md transition-colors duration-200" style="color:#9792CB;">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+   <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Hello!</h2>
+<p class="text-gray-700 text-lg leading-relaxed">
+  My name is Julia Mary Devasia. I’m currently pursuing a Bachelor of Commerce (Hons.) with ACCA. I love exploring art and photography, and I’m always excited to learn new skills.
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed">
+         On this site, you can explore my hobbies, educational background, family, extracurricular activities, and get in touch with me through the contact page.
+</p>
+
+       
+        <div class="mt-8 text-center">
+          <img src="me.jpg" 
+               alt="A placeholder for a personal photo" 
+               class="mx-auto rounded-full shadow-lg h-40 w-40 object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies Page -->
+    <section id="hobbies" class="page">
+      <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">My Hobbies</h2>
+        <ul class="space-y-4">
+          <li class="flex flex-col items-start">
+            <div class="flex items-start w-full">
+              <div>
+                <h3 class="text-xl font-semibold">Painting</h3>
+                <p class="text-gray-600">I find joy in creating art with watercolors and acrylics. It's a great way to express myself and my interests.</p>
+              </div>
+            </div>
+            <img src="painting1.jpg" alt="An example of a painting" class="mt-4 rounded-xl shadow-md w-full max-w-xs sm:max-w-sm mx-auto">
+          </li>
+<hr>
+          <li class="flex flex-col items-start">
+            <div class="flex items-start w-full">
+              <div>
+                <h3 class="text-xl font-semibold">Cooking</h3>
+                <p class="text-gray-600">Cooking is something that I enjoy doing when I have cravings. Not only is it fun, but also an amazing and useful skill to have!</p>
+              </div>
+            </div>
+            <img src="cooking1.jpg" alt="An example of cooking" class="mt-4 rounded-xl shadow-md w-full max-w-xs sm:max-w-sm mx-auto">
+          </li>
+<hr>
+          <li class="flex flex-col items-start">
+            <div class="flex items-start w-full">
+              <div>
+                <h3 class="text-xl font-semibold">Reading</h3>
+                <p class="text-gray-600">I am an avid reader who enjoys both fantasy novels and self-care books. Reading allows me to explore new worlds and also reflect on personal growth. One of my favorite books is Ikigai, which inspires me to live with purpose and balance.</p>
+              </div>
+            </div>
+            <img src="reading1.jpg" alt="An example of reading" class="mt-4 rounded-xl shadow-md w-full max-w-xs sm:max-w-sm mx-auto">
+          </li>
+<hr>
+          <li class="flex flex-col items-start">
+            <div class="flex items-start w-full">
+              <div>
+                <h3 class="text-xl font-semibold">Photography</h3>
+                <p class="text-gray-600">I enjoy experimenting with photography, learning new editing techniques, and exploring different perspectives with my camera.</p>
+              </div>
+            </div>
+            <img src="photography.jpg" alt="An example of photography" class="mt-4 rounded-xl shadow-md w-full max-w-xs sm:max-w-sm mx-auto">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Qualification Page -->
+    <section id="qualification" class="page">
+      <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Education & Qualifications</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Bachelor of Commerce (Hons.) with ACCA</h3>
+            <p class="text-gray-600">Rajagiri College of Social Science, Kochi | 2025 -</p>
+            <img src="college.jpg" alt="College" class="mt-4 rounded-xl shadow-md w-50% max-w-xs sm:max-w-sm mx-auto">
+          </div>
+          <hr class="border-gray-300">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Higher Secondary Education</h3>
+            <p class="text-gray-600">Abu Dhabi Indian School, UAE | 2023-2025</p>
+            <p class="text-gray-600 mt-2">Commerce stream</p>
+            <img src="school.jpg" alt="School" class="mt-4 rounded-xl shadow-md w-50% max-w-xs sm:max-w-sm mx-auto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family Page -->
+    <section id="family" class="page">
+      <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">My Family</h2>
+        <div class="prose max-w-none text-gray-700">
+          <p>My family is very important to me. They have been a great source of support and inspiration in my life.</p>
+          <div class="mt-4">
+            <h3 class="text-xl font-semibold text-gray-800">Father</h3>
+            <p>Devasia Joseph - Software Engineer</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Mother</h3>
+            <p>Janet Paul - Chief Accountant</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Siblings</h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Joel Devasia - 3rd year B.tech </li>
+              <li>Johann Devasia - Grade 5 </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extracurricular Page -->
+<section id="extracurricular" class="page">
+  <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Extracurricular Activities</h2>
+    
+    <ul class="space-y-4">
+      <li class="flex flex-col items-start">
+        <div class="flex items-start w-full">
+          <div>
+            <h3 class="text-xl font-semibold">Art Club</h3>
+            <p class="text-gray-600">I have participated in my school's Art Club, where I explored various forms of visual art, paintings, crafts and collaborate on creative projects.</p>
+          </div>
+        </div>
+        <!-- Placeholder image for Art Club -->
+        <img src="artclub.jpg" alt="Art Club activity" class="mt-4 rounded-xl shadow-md w-full max-w-xs sm:max-w-sm mx-auto">
+      </li>
+    </ul>
+
+<ul class="space-y-4">
+      <li class="flex flex-col items-start">
+        <div class="flex items-start w-full">
+          <div>
+            <h3 class="text-xl font-semibold">Wellbeing Sessions</h3>
+            <p class="text-gray-600">I have conducted various wellbeing sessions in class where i spread awarness on mental health</p>
+          </div>
+        </div>
+        <!-- Placeholder image for Art Club -->
+        <img src="wellbeing.jpg" alt="Art Club activity" class="mt-4 rounded-xl shadow-md w-full max-w-xs sm:max-w-sm mx-auto">
+      </li>
+    </ul>
+    
+  </div>
+</section>
+
+
+    <!-- Contact Me Page -->
+    <section id="contact" class="page">
+      <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Me</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-gray-700 font-semibold">Name</label>
+            <input type="text" id="name" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-shadow">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 font-semibold">Email</label>
+            <input type="email" id="email" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-shadow">
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 font-semibold">Message</label>
+            <textarea id="message" rows="4" class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-shadow"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 px-6 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors duration-200">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 mt-8">
+    <div class="container mx-auto px-6 text-center text-sm">
+      <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for page navigation and functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const pages = document.querySelectorAll('.page');
+
+      const messageBox = document.createElement('div');
+      messageBox.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #333;
+        color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        display: none;
+      `;
+      document.body.appendChild(messageBox);
+
+      function showMessage(message) {
+        messageBox.textContent = message;
+        messageBox.style.display = 'block';
+        setTimeout(() => { messageBox.style.display = 'none'; }, 3000);
+      }
+
+      function showPage(id) {
+        pages.forEach(page => page.classList.remove('active'));
+        const activePage = document.getElementById(id);
+        if (activePage) activePage.classList.add('active');
+      }
+
+      function updateActiveLink(href) {
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === href) {
+            link.classList.add('bg-indigo-100', 'text-indigo-800');
+          } else {
+            link.classList.remove('bg-indigo-100', 'text-indigo-800');
+          }
+        });
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = e.target.getAttribute('href').substring(1);
+          showPage(targetId);
+          updateActiveLink(e.target.getAttribute('href'));
+        });
+      });
+
+      const contactForm = document.querySelector('#contact form');
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        console.log('Form Submitted:', { name, email, message });
+        showMessage('Thank you for your message! It has been submitted.');
+        contactForm.reset();
+      });
+
+      // Set initial page and active link
+      showPage('home');
+      updateActiveLink('#home');
+    });
+  </script>
+
+</body>
+</html>
